@@ -1,0 +1,14 @@
+{
+  "_comments_1"                          : "decoder_method: 0 for OneDecoder, 1 for MultiDecoder",
+  "decoder_method"                      : 1           ,
+  "_comments_2"                         : "nyt or webnlg",
+  "dataset"                             : "webnlg",
+  "triple_number"                       : 5           ,
+  "save_freq"                           : 2          ,
+  "learning_rate"                       : 0.01       ,
+  "batch_size"                          : 100        ,
+  "epoch_number"                        : 50         ,
+  "encoder_num_units"                   : 1000         ,
+  "decoder_num_units"                   : 1000     ,
+  "exp_name"                            : "exp_tmp"
+}
