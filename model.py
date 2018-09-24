@@ -26,6 +26,8 @@ def get_embedding_table(config):
         words_vectors = [0] * len(words_id2vec)
         for id, vec in words_id2vec.items():
             words_vectors[int(id)] = vec
+        # add word eos embedding
+        words_vectors.append(list(np.random.uniform(0, 1, config.embedding_dim)))
         words_embedding_table = tf.Variable(name='words_emb_table', initial_value=words_vectors, dtype=tf.float32)
     else:
         logger.info('Word Embedding random init')
@@ -137,6 +139,12 @@ class Decoder:
                                                       shape=[self.config.batch_size,
                                                              self.config.decoder_output_max_length],
                                                       name='standard_outputs')
+        #  After we determine the position we want to copy, we need to acquire the word embedding of this position as
+        #  the input of next time step. Since the input is a batch of sentences, we can build another embedding table
+        #  with words of each sentences in order. Therefore, in this embedding table, the id of first word of first
+        #  sentence in this batch is 1, the id of first word of second sentence is 1+sentence_length and the id of
+        #  k-th word of i-th sentence is k+i*sentence_length. We calculate the batch_bias as follows.
+        #  The sentence_length = max_sentence_length +1 because we append 'eos' at the end of each sentence.
         self.batch_bias4copy = tf.constant(
             value=[i * (self.config.max_sentence_length + 1) for i in range(self.config.batch_size)],
             dtype=tf.int64,

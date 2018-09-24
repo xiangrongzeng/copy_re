@@ -99,7 +99,7 @@ def padding_a_sentence(sent, max_length):
 
 
 def append_eos2sentence(sent_index, config):
-    eos_idx = config.words_number + 1
+    eos_idx = config.words_number
     appended = []
     for sent in sent_index:
         sent = list(sent)
