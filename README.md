@@ -1,15 +1,22 @@
-# This code is for ACL2018 paper "Extracting Relational Facts by an End-to-End Neural Model with Copy Mechanism"
+ This code is for ACL2018 paper "Extracting Relational Facts by an End-to-End Neural Model with Copy Mechanism"
+## Environment
+ - python2.7
+ - [requirements.txt](https://github.com/xiangrongzeng/copy_re/blob/master/requirements.txt)
 
-## Modify the Data path
+## Data
 
-You need to modify the data path in const.py before run the code.
-The pre-processed data is avaliable in:
+You need to modify the data path in const.py before running the code.
+The pre-processed data is released.
 
-WebNLG dataset:
- https://drive.google.com/open?id=1zISxYa-8ROe2Zv8iRc82jY9QsQrfY1Vj
+WebNLG:
 
-NYT dataset:
- https://drive.google.com/open?id=10f24s9gM7NdyO3z5OqQxJgYud4NnCJg3
+ - [dataset](https://drive.google.com/open?id=1zISxYa-8ROe2Zv8iRc82jY9QsQrfY1Vj)
+ - [pre-trained word embedding](https://drive.google.com/open?id=1LOT2-JxjjglCFyxv-JQAJlJvEmleSXZl)
+
+NYT:
+
+ - [dataset](https://drive.google.com/open?id=10f24s9gM7NdyO3z5OqQxJgYud4NnCJg3)
+ - [pre-trained word embedding](https://drive.google.com/open?id=1yVjN-0lZid6YJmsX5g8x_YKiCfnRy8IL)
  
 
 
