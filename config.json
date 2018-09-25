@@ -5,9 +5,9 @@
   "dataset"                             : "webnlg",
   "triple_number"                       : 5           ,
   "save_freq"                           : 2          ,
-  "learning_rate"                       : 0.01       ,
+  "learning_rate"                       : 0.001       ,
   "batch_size"                          : 100        ,
-  "epoch_number"                        : 50         ,
+  "epoch_number"                        : 100         ,
   "encoder_num_units"                   : 1000         ,
   "decoder_num_units"                   : 1000     ,
   "exp_name"                            : "exp_tmp"
