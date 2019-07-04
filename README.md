@@ -34,4 +34,7 @@ You need to set the epochs of the model in main.py first. Then run the following
 
 "-t 1" means test and "-t 2" means valid.
 
+## Data process
+
+The data_process can help you understand how did we process the data.
 
