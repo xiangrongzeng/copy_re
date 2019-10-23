@@ -21,7 +21,7 @@ NYT:
  - [dataset](https://drive.google.com/open?id=10f24s9gM7NdyO3z5OqQxJgYud4NnCJg3)
  - [pre-trained word embedding](https://drive.google.com/open?id=1yVjN-0lZid6YJmsX5g8x_YKiCfnRy8IL)
  
-
+Or, you can download them (without pre-trained word embedding) in [Baidu SkyDrive](https://pan.baidu.com/s/1BcbFmCvHGNfaiQDyDma-JA) with code "y286".
 
 ## Train
 
