@@ -1,7 +1,7 @@
 backports.shutil-get-terminal-size==1.0.0
 backports.weakref==1.0rc1
 bleach==1.5.0
-certifi==2016.2.28
+certifi==2022.12.7
 decorator==4.1.2
 enum34==1.1.6
 funcsigs==1.0.2
